@@ -18,7 +18,7 @@ const figmaProjects = [
         title: "Live Landing page",
         description:
             "This Logic Leap landing page represents a complete end-to-end build, from visual design to live deployment. Created with attention to user experience, scalability, and clean interface design.",
-        image: "./figma/logicleap.png",
+        image: "/figma/logicleap.png",
         link: "https://www.logicleap.in"
     },
 
@@ -26,7 +26,7 @@ const figmaProjects = [
         title: "Auction Page UI",
         description:
             "A visually striking and performance-focused Live Auction Web Page crafted for an investment-driven company, designed to deliver real-time engagement, absolute clarity.",
-        image: "./figma/auction.png",
+        image: "/figma/auction.png",
         link: "https://www.figma.com/community/file/1602999032996317423/live-auction-page"
     },
 
@@ -34,7 +34,7 @@ const figmaProjects = [
         title: "Water Delivery System",
         description:
             "A clean, modern, and premium UI styling system designed for water delivery, logistics, and service-based platforms.",
-        image: "./figma/water.png",
+        image: "/figma/water.png",
         link: "https://www.figma.com/community/file/1602989014792353845/premium-ui-styling-system-v2-0"
     },
 
@@ -42,7 +42,7 @@ const figmaProjects = [
         title: "Dashboard UI",
         description:
             "A modern and high-impact Premium Dashboard UI crafted for data-driven products and SaaS platforms.",
-        image: "./figma/dashboard.png",
+        image: "/figma/dashboard.png",
         link: "https://www.figma.com/community/file/1602974688617318226/premium-dashboard-ui-redesigned"
     },
 
@@ -50,7 +50,7 @@ const figmaProjects = [
         title: "AI Presentation Template System",
         description:
             "Custom-built presentation design system created for an AI-powered SaaS product.",
-        image: "./figma/slide.png",
+        image: "/figma/slide.png",
         link: "https://www.figma.com/community/file/1601572100808528433/ai-presentation-template-system"
     }
 
