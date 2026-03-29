@@ -1,0 +1,174 @@
+﻿
+> akash-portfolio@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.0
+
+   Creating an optimized production build ...
+node.exe : Failed to 
+compile.
+At line:1 char:1
++ & "C:\Program Files\
+nodejs/node.exe" "C:\U
+sers\KIIT\AppData\Roam
+ing\n ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Failed to    
+ compile.:String)     
+[], RemoteExcepti    
+on
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+
+app\layout.tsx
+An error occurred in 
+`next/font`.
+
+Error [ERR_UNSUPPORTED
+_ESM_URL_SCHEME]: 
+Only URLs with a 
+scheme in: file, 
+data, and node are 
+supported by the 
+default ESM loader. 
+On Windows, absolute 
+paths must be valid 
+file:// URLs. 
+Received protocol 'c:'
+    at throwIfUnsuppor
+tedURLScheme (node:int
+ernal/modules/esm/load
+:187:11)
+    at defaultLoad (no
+de:internal/modules/es
+m/load:82:3)
+    at 
+ModuleLoader.load (nod
+e:internal/modules/esm
+/loader:815:12)
+    at ModuleLoader.lo
+adAndTranslate (node:i
+nternal/modules/esm/lo
+ader:594:31)
+    at 
+#createModuleJob (node
+:internal/modules/esm/
+loader:624:36)
+    at #getJobFromReso
+lveResult (node:intern
+al/modules/esm/loader:
+343:34)
+    at ModuleLoader.ge
+tModuleJobForImport (n
+ode:internal/modules/e
+sm/loader:311:41)
+    at async onImport.
+tracePromise.__proto__
+ (node:internal/module
+s/esm/loader:664:25)
+
+app\layout.tsx
+An error occurred in 
+`next/font`.
+
+Error [ERR_UNSUPPORTED
+_ESM_URL_SCHEME]: 
+Only URLs with a 
+scheme in: file, 
+data, and node are 
+supported by the 
+default ESM loader. 
+On Windows, absolute 
+paths must be valid 
+file:// URLs. 
+Received protocol 'c:'
+    at throwIfUnsuppor
+tedURLScheme (node:int
+ernal/modules/esm/load
+:187:11)
+    at defaultLoad (no
+de:internal/modules/es
+m/load:82:3)
+    at 
+ModuleLoader.load (nod
+e:internal/modules/esm
+/loader:815:12)
+    at ModuleLoader.lo
+adAndTranslate (node:i
+nternal/modules/esm/lo
+ader:594:31)
+    at 
+#createModuleJob (node
+:internal/modules/esm/
+loader:624:36)
+    at #getJobFromReso
+lveResult (node:intern
+al/modules/esm/loader:
+343:34)
+    at ModuleLoader.ge
+tModuleJobForImport (n
+ode:internal/modules/e
+sm/loader:311:41)
+    at async onImport.
+tracePromise.__proto__
+ (node:internal/module
+s/esm/loader:664:25)
+
+app\layout.tsx
+An error occurred in 
+`next/font`.
+
+Error [ERR_UNSUPPORTED
+_ESM_URL_SCHEME]: 
+Only URLs with a 
+scheme in: file, 
+data, and node are 
+supported by the 
+default ESM loader. 
+On Windows, absolute 
+paths must be valid 
+file:// URLs. 
+Received protocol 'c:'
+    at throwIfUnsuppor
+tedURLScheme (node:int
+ernal/modules/esm/load
+:187:11)
+    at defaultLoad (no
+de:internal/modules/es
+m/load:82:3)
+    at 
+ModuleLoader.load (nod
+e:internal/modules/esm
+/loader:815:12)
+    at ModuleLoader.lo
+adAndTranslate (node:i
+nternal/modules/esm/lo
+ader:594:31)
+    at 
+#createModuleJob (node
+:internal/modules/esm/
+loader:624:36)
+    at #getJobFromReso
+lveResult (node:intern
+al/modules/esm/loader:
+343:34)
+    at ModuleLoader.ge
+tModuleJobForImport (n
+ode:internal/modules/e
+sm/loader:311:41)
+    at async onImport.
+tracePromise.__proto__
+ (node:internal/module
+s/esm/loader:664:25)
+
+
+> Build failed 
+because of webpack 
+errors

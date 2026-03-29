@@ -3,31 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* THEME_ECLIPSE (default) */
+  --bg: #05050f;
+  --bg2: #0a0a1a;
+  --surface: #0f0f22;
+  --accent1: #7c3aff;
+  --accent2: #00d4ff;
+  --accent3: #ff3a8c;
+  --text: #e8e8f0;
+  --muted: #6b6b8a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-theme="ember"] {
+  --bg: #0d0805;
+  --bg2: #150f0a;
+  --surface: #1c1209;
+  --accent1: #ff6b35;
+  --accent2: #ffb347;
+  --accent3: #e8445a;
+  --text: #f0e8e0;
+  --muted: #8a7060;
 }
 
+[data-theme="arctic"] {
+  --bg: #f8f9fb;
+  --bg2: #f0f2f6;
+  --surface: #ffffff;
+  --accent1: #2563eb;
+  --accent2: #0ea5e9;
+  --accent3: #7c3aed;
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100%;
+  position: relative;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Custom Cursor */
+@media (pointer: fine) {
+  body {
+    cursor: none;
   }
 }

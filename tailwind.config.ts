@@ -8,10 +8,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        accent1: 'var(--accent1)',
+        accent2: 'var(--accent2)',
+        accent3: 'var(--accent3)',
+        bg: 'var(--bg)',
+        bg2: 'var(--bg2)',
+        surface: 'var(--surface)',
+        muted: 'var(--muted)',
+      },
+      fontFamily: {
+        syne: ['var(--font-syne)', 'sans-serif'],
+        mono: ['var(--font-dm-mono)', 'monospace'],
+        instrument: ['var(--font-instrument-serif)', 'serif'],
+      },
+      animation: {
+        'marquee': 'marquee 25s linear infinite',
+        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+      },
+      keyframes: {
+        marquee: { '0%': {transform:'translateX(0)'}, '100%': {transform:'translateX(-50%)'} },
+        pulseGlow: { '0%,100%': {opacity:'1'}, '50%': {opacity:'0.4'} },
       },
     },
   },
