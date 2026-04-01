@@ -94,12 +94,39 @@ export default function CanvasSequence() {
           className="absolute inset-0 w-full h-full"
         />
 
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none mx-auto">
-          <motion.div style={{ opacity: text1Opacity }} className="absolute text-center">
-            <h1 className="font-syne font-black leading-none tracking-tight bg-gradient-to-r from-white via-accent2 to-accent1 bg-clip-text text-transparent">
-              <span className="block text-[clamp(2rem,5vw,3rem)] mb-2">It Started with</span>
-              <span className="block text-[clamp(4rem,7vw,9rem)] whitespace-nowrap">"Hello World"</span>
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none px-4">
+
+          <motion.div
+            style={{ opacity: text1Opacity }}
+            className="absolute text-center max-w-full"
+          >
+
+            <h1 className="
+  font-syne
+  font-black
+  leading-none
+  tracking-tight
+  bg-gradient-to-r
+  from-white via-accent2 to-accent1
+  bg-clip-text
+  text-transparent
+  text-[clamp(2.5rem,7vw,9rem)]
+">
+
+              <span className="block lg:inline">
+                It Started with
+              </span>
+
+              <span className="
+    block
+    lg:inline
+    lg:ml-3
+  ">
+                "Hello World"
+              </span>
+
             </h1>
+
           </motion.div>
 
           <motion.div style={{ opacity: text2Opacity }} className="absolute text-center">

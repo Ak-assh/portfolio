@@ -1,72 +1,49 @@
-import { Resend } from "resend"
-import { NextResponse } from "next/server"
+import { Resend } from "resend";
 
-const resend = new Resend(
-    process.env.RESEND_API_KEY
-)
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-
     try {
+        const body = await req.json();
 
-        const { name, email, subject, message } =
-            await req.json()
+        const { name, email, message } = body;
 
-        /* Validation */
-
+        // Basic validation
         if (!name || !email || !message) {
-
-            return NextResponse.json(
-                { success: false, error: "Missing fields" },
+            return Response.json(
+                { error: "Missing required fields" },
                 { status: 400 }
-            )
-
+            );
         }
 
-        /* Send Email */
+        const data = await resend.emails.send({
+            from: "Portfolio Contact <onboarding@resend.dev>",
 
-        await resend.emails.send({
+            to: ["your-email@gmail.com"], // change to your email
 
-            from: "Portfolio <onboarding@resend.dev>",
+            subject: `New message from ${name}`,
 
-            to: process.env.EMAIL_TO!,
-
-            subject: `Portfolio Message: ${subject || "New Message"}`,
-
-            replyTo: email,
+            replyTo: email, // ✅ FIXED HERE
 
             html: `
-        <h2>New Portfolio Message</h2>
+        <h2>New Contact Message</h2>
 
         <p><strong>Name:</strong> ${name}</p>
 
         <p><strong>Email:</strong> ${email}</p>
 
-        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong> ${message}</p>
+      `,
+        });
 
-        <p><strong>Message:</strong></p>
+        return Response.json(data);
 
-        <p>${message}</p>
-      `
+    } catch (error) {
+        console.error(error);
 
-        })
-
-        return NextResponse.json(
-            { success: true },
-            { status: 200 }
-        )
-
-    }
-
-    catch (error) {
-
-        console.error("Resend Error:", error)
-
-        return NextResponse.json(
-            { success: false },
+        return Response.json(
+            { error: "Failed to send email" },
             { status: 500 }
-        )
-
+        );
     }
-
 }
