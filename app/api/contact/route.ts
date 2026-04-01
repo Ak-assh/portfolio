@@ -19,7 +19,7 @@ export async function POST(req: Request) {
         const data = await resend.emails.send({
             from: "Portfolio Contact <onboarding@resend.dev>",
 
-            to: ["your-email@gmail.com"], // change to your email
+            to: ["akash0025ltr@gmail.com-email@gmail.com"], // change to your email
 
             subject: `New message from ${name}`,
 
