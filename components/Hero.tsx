@@ -278,7 +278,7 @@ export default function Hero() {
           {/* Download Resume */}
 
           <a
-            href="/resume.pdf"
+            href="/resume3.pdf"
             download
             className="px-8 py-4 rounded-full border border-accent1/30 text-text/90 font-medium hover:bg-accent1/10 transition-colors flex items-center justify-center gap-2"
           >
