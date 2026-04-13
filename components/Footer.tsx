@@ -7,7 +7,7 @@ export default function Footer() {
         </p>
         <div className="flex gap-4">
           <a
-            href="/resume3.pdf"
+            href="/AkashKumar_FullStack.pdf"
             download
             className="px-6 py-2 rounded-full border border-accent2/30 text-accent2 text-sm hover:bg-accent2/10 transition-colors font-medium"
           >
